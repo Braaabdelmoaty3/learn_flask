@@ -15,3 +15,13 @@ class RegestrationForm():
                         validators=[data_required(), email()])
     password = PasswordField('passward',validators=[data_required()])
     comferm_password = PasswordField('comferm passward',validators=[data_required(), EqualTo('passward')])
+
+
+class loginForm():
+    """
+    made a login page if you already regeister
+    """
+
+    email = stringfeild('Email',
+                        validators=[data_required(), email()])
+    password = PasswordField('passward',validators=[data_required()])
